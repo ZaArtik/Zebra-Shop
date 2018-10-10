@@ -15,9 +15,10 @@ $yellow: #f2ca66;
 $brown: #e4ce9a;
 
 // base
-@import "base/adjustment";
-@import "base/normalize";
 @import "base/mixins";
+@import "base/normalize";
+@import "base/adjustment";
 
 
 //layout
+@import "layout/header";

@@ -3,18 +3,6 @@
 	vertical-align: $valign;
 }
 
-@mixin border-radius($radius){
-	border-radius: $radius;
-	-webkit-border-radius: $radius;
-	-moz-border-radius: $radius;
-}
-
-@mixin box-shadow($shadow) {
-	box-shadow: $shadow;
-	-webkit-box-shadow: $shadow;
-	-moz-box-shadow: $shadow;
-}
-
 %clearfix{
 	&:after, &:before {
 		content: "";
@@ -26,10 +14,36 @@
 	}
 }
 
-@mixin transition($transition) {
-	-webkit-transition: $transition;
-	-moz-transition: $transition;
-	-ms-transition: $transition;
-	-o-transition: $transition;
-	transition: $transition;
+//responsive
+
+@function remd($px) {
+    @return $px / 16px + 0rem;
+}
+
+@function remt($px) {
+    @return $px / 14px + 0rem;
+}
+
+@function remp($px) {
+    @return $px / 12px + 0rem;
+}
+
+// Примеси для медиа запросов
+
+@mixin desktop {
+    @media screen and (max-width: 1200px) {
+        @content;
+    }
+}
+
+@mixin tablet {
+    @media screen and (max-width: 768px) {
+        @content;
+    }
+}
+
+@mixin phones {
+    @media screen and (max-width: 480px) {
+        @content;
+    }
 }

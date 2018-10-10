@@ -1,0 +1,54 @@
+.header {
+    background: #ffffff;
+    height: remd(85px);
+    color: $grey;
+    opacity: 0.94;
+}
+
+.header__container {
+    padding: 0px 20px;
+    height: remd(85px);
+    opacity: 1;
+    display: flex;
+    align-items: center;
+}
+
+
+// Header logo
+
+.header__logo {
+}
+
+.header__logo-text {
+    text-transform: uppercase;
+    font-weight: bold;
+    font-size: remd(38px);
+}
+
+.header__logo-text_blue-color {
+    color: $lightblue;
+}
+
+
+// Header menu
+
+.menu {
+    height: 100%;
+    display: flex;
+}
+
+.menu__item {
+    height: 100%;
+    margin-left: 40px;
+    display: flex;
+    align-items: center;
+
+    &:first-child {
+        margin-left: 0;
+    }
+}
+
+.menu__link {
+    display: block;
+}
+

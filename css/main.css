@@ -54,64 +54,6 @@
   font-style: normal;
 }
 
-body {
-  font-family: "HelveticaNeue", Helvetica, serif;
-  -webkit-font-smoothing: antialiased;
-  font-size: 27px;
-  line-height: 1.42;
-  -webkit-box-sizing: border-box;
-  box-sizing: border-box;
-}
-
-html, body {
-  width: 100%;
-  height: 100%;
-}
-
-.wrapper {
-  min-height: 100%;
-  overflow: hidden;
-  position: relative;
-  min-width: 1044px;
-}
-
-.wrapper:after {
-  content: "";
-  height: 105px;
-  display: block;
-}
-
-footer {
-  text-align: center;
-  height: 105px;
-  margin-top: -105px;
-  position: relative;
-  min-width: 1044px;
-}
-
-.container {
-  width: 1024px;
-  margin: 0 auto;
-}
-
-ul {
-  padding: 0;
-  margin: 0;
-}
-
-li {
-  list-style: none;
-}
-
-p {
-  margin: 0;
-}
-
-h1, h2, h3, h4, h5, h6 {
-  margin: 0;
-  font-weight: normal;
-}
-
 /*! normalize.css v3.0.3 | MIT License | github.com/necolas/normalize.css */
 /**
  * 1. Set default font family to sans-serif.
@@ -508,4 +450,142 @@ table {
 td,
 th {
   padding: 0;
+}
+
+* {
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+@media screen and (max-width: 1200px) {
+  html {
+    font-size: 16px;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  html {
+    font-size: 14px;
+  }
+}
+
+@media screen and (max-width: 480px) {
+  html {
+    font-size: 12px;
+  }
+}
+
+body {
+  font-family: "HelveticaNeue", Helvetica, serif;
+  -webkit-font-smoothing: antialiased;
+  line-height: 1.42;
+}
+
+html, body {
+  width: 100%;
+  height: 100%;
+}
+
+.wrapper {
+  min-height: 100%;
+  overflow: hidden;
+  position: relative;
+  min-width: 1044px;
+}
+
+.wrapper:after {
+  content: "";
+  height: 105px;
+  display: block;
+}
+
+footer {
+  text-align: center;
+  height: 105px;
+  margin-top: -105px;
+  position: relative;
+  min-width: 1044px;
+}
+
+.container {
+  width: 1024px;
+  margin: 0 auto;
+}
+
+ul {
+  text-decoration: none;
+  padding: 0;
+  margin: 0;
+}
+
+li {
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+}
+
+p {
+  margin: 0;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  margin: 0;
+  font-weight: normal;
+}
+
+.header {
+  background: #ffffff;
+  height: 5.3125rem;
+  color: #626262;
+  opacity: 0.94;
+}
+
+.header__container {
+  padding: 0px 20px;
+  height: 5.3125rem;
+  opacity: 1;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+}
+
+.header__logo-text {
+  text-transform: uppercase;
+  font-weight: bold;
+  font-size: 2.375rem;
+}
+
+.header__logo-text_blue-color {
+  color: #06b5a9;
+}
+
+.menu {
+  height: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.menu__item {
+  height: 100%;
+  margin-left: 40px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+}
+
+.menu__item:first-child {
+  margin-left: 0;
+}
+
+.menu__link {
+  display: block;
 }
