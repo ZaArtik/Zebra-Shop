@@ -1,8 +1,18 @@
 @import "base/fonts";
 
-$container-width    : 940px;
-$footer-height      : 72px;
-$body-font          : 'fira_sansregular', Helvetica, serif;
+// adjustment variables
+$container-width    : 1024px;
+$footer-height      : 105px;
+$body-font          : 'HelveticaNeue', Helvetica, serif;
+
+//colors
+$red: #cf1a2b;
+$grey: #626262;
+$darkblue: #1b2330;
+$lightblue: #06b5a9;
+$pink: #ffa7ce;
+$yellow: #f2ca66;
+$brown: #e4ce9a;
 
 // base
 @import "base/adjustment";

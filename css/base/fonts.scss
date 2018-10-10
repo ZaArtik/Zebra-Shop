@@ -1,47 +1,75 @@
 @font-face {
-	font-family: 'fira_sansregular';
-	src: url('../fonts/firasans-regular-webfont.eot');
-	src: url('../fonts/firasans-regular-webfont.eot?#iefix') format('embedded-opentype'), url('../fonts/firasans-regular-webfont.woff2') format('woff2'), url('../fonts/firasans-regular-webfont.woff') format('woff'), url('../fonts/firasans-regular-webfont.ttf') format('truetype'), url('../fonts/firasans-regular-webfont.svg#fira_sansregular') format('svg');
+	font-family: 'HelveticaCE';
+	src: url('../fonts/HelveticaCE.woff') format('woff');
 	font-weight: normal;
 	font-style: normal;
 }
 
 @font-face {
-	font-family: 'fira_sansbold';
-	src: url('../fonts/firasans-bold-webfont.eot');
-	src: url('../fonts/firasans-bold-webfont.eot?#iefix') format('embedded-opentype'), url('../fonts/firasans-bold-webfont.woff2') format('woff2'), url('../fonts/firasans-bold-webfont.woff') format('woff'), url('../fonts/firasans-bold-webfont.ttf') format('truetype'), url('../fonts/firasans-bold-webfont.svg#fira_sansbold') format('svg');
+	font-family: 'HelveticaNeue';
+	src: url('../fonts/HelveticaNeue.woff') format('woff');
 	font-weight: normal;
 	font-style: normal;
 }
 
 @font-face {
-	font-family: 'fira_sanslight';
-	src: url('../fonts/firasans-light-webfont.eot');
-	src: url('../fonts/firasans-light-webfont.eot?#iefix') format('embedded-opentype'), url('../fonts/firasans-light-webfont.woff2') format('woff2'), url('../fonts/firasans-light-webfont.woff') format('woff'), url('../fonts/firasans-light-webfont.ttf') format('truetype'), url('../fonts/firasans-light-webfont.svg#fira_sanslight') format('svg');
+	font-family: 'HelveticaNeue-Bold';
+	src: url('../fonts/HelveticaNeue-Bold.woff') format('woff');
 	font-weight: normal;
 	font-style: normal;
 }
 
 @font-face {
-	font-family: 'fira_sansmedium';
-	src: url('../fonts/firasans-medium-webfont.eot');
-	src: url('../fonts/firasans-medium-webfont.eot?#iefix') format('embedded-opentype'), url('../fonts/firasans-medium-webfont.woff2') format('woff2'), url('../fonts/firasans-medium-webfont.woff') format('woff'), url('../fonts/firasans-medium-webfont.ttf') format('truetype'), url('../fonts/firasans-medium-webfont.svg#fira_sansmedium') format('svg');
+	font-family: 'HelveticaNeue-BoldItalic';
+	src: url('../fonts/HelveticaNeue-BoldItalic.woff') format('woff');
 	font-weight: normal;
 	font-style: normal;
 }
 
-@mixin fira($style: regular) {
-	font-family: 'fira_sansregular';
+@font-face {
+	font-family: 'helvetica_ceregular';
+	src: url('../fonts/hv-webfont.woff2') format('woff2'),
+		url('../fonts/hv-webfont.woff') format('woff');
+	font-weight: normal;
+	font-style: normal;
+}
 
-	@if $style == bold {
-		font-family: 'fira_sansbold';
+@font-face {
+	font-family: 'MyriadPro-Regular';
+	src: url('../fonts/MyriadPro-Regular.woff') format('woff');
+	font-weight: normal;
+	font-style: normal;
+}
+
+@font-face {
+	font-family: 'HelveticaCyr-Upright';
+	src: url('../fonts/HelveticaCyr-Upright.woff') format('woff');
+	font-weight: normal;
+	font-style: normal;
+}
+
+@font-face {
+	font-family: 'Impact';
+	src: url('../fonts/Impact.woff') format('woff');
+	font-weight: normal;
+	font-style: normal;
+}
+
+// font-family: 'Josefin Slab', serif;
+
+
+
+
+// MIXINS
+
+@mixin helvetica($style: regular) {
+	font-family: 'HelveticaNeue';
+
+	@if $style==bold {
+		font-family: 'HelveticaNeue-Bold';
 	}
 
-	@if $style == light {
-		font-family: 'fira_sanslight';
-	}
-
-	@if $style == medium {
-		font-family: 'fira_sansmedium';
+	@if $style==lightbold {
+		font-family: 'HelveticaNeue-BoldItalic';
 	}
 }
