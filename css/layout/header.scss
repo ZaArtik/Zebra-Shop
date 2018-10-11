@@ -1,54 +1,133 @@
 .header {
-    background: #ffffff;
+    background: rgba($color: #fff, $alpha: 0.94);
     height: remd(85px);
     color: $grey;
-    opacity: 0.94;
+    width: 100%;
 }
 
 .header__container {
-    padding: 0px 20px;
+    padding: 0px remd(20px);
     height: remd(85px);
-    opacity: 1;
     display: flex;
+    justify-content: space-between;
     align-items: center;
 }
 
 
 // Header logo
-
-.header__logo {
+.logo {
+    
 }
 
-.header__logo-text {
-    text-transform: uppercase;
-    font-weight: bold;
+.logo-caption {
     font-size: remd(38px);
+    font-weight: bold;
+    text-transform: uppercase;
+    color: $grey;
 }
 
-.header__logo-text_blue-color {
+.logo-caption_blue {
     color: $lightblue;
 }
 
 
+
 // Header menu
-
-.menu {
-    height: 100%;
-    display: flex;
-}
-
-.menu__item {
-    height: 100%;
-    margin-left: 40px;
+.header__menu {
     display: flex;
     align-items: center;
+    height: 100%;
+    margin-left: remd(50px);
+}
+
+.header__item {
+    height: 100%;
+    margin-left: remd(10px);
 
     &:first-child {
         margin-left: 0;
     }
 }
 
-.menu__link {
-    display: block;
+.header__link {
+    display: flex;
+    align-items: center;
+    height: 100%;
+    padding: 0 remd(10px);
+    font-size: remd(18px);
+    color: $grey;
+
+    &:hover {
+        color: #fff;
+        background: $red;
+    }
 }
 
+
+
+
+// basket 
+.header__basket {
+    display: flex;
+    position: relative;
+    margin-right: remd(30px);
+}
+
+.header__basket-iamge {
+    background: url('../images/decor/Shape 1.png') 0 0 no-repeat;
+    width: 30px;
+    height: 30px;
+
+    &::after {
+        content: "";
+        position: absolute;
+            left: 100%;
+            top: 50%;
+        transform: translateY(-6px);
+        margin-left: remd(15px);
+        border-top: remd(12px) solid #9d9d9d;
+        border-bottom: 10px solid transparent;
+        border-left: 10px solid transparent;
+        border-right: 10px solid transparent;
+    }
+}
+
+.header__basket-price {
+    font-size: remd(24px);
+    color: #9d9d9d;
+    margin-left: remd(10px);
+}
+
+
+
+
+
+
+
+
+
+
+
+.glavniy-block {
+    background: red;
+}
+
+.main-block {
+    width: 80%;
+    margin: 0 auto;
+    background: red;
+    display: flex;
+    justify-content: space-between;
+}
+
+.block1 {
+    flex-grow: 1;
+}
+
+.block2 {
+    flex-grow: 1;
+}
+
+.block3 {
+    flex-grow: 1;
+}
