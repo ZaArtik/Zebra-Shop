@@ -1,8 +1,32 @@
 .header {
+    position: relative;
+    height: 650px;
+    background: url('../images/background/Layer 3.png') 0 0 no-repeat;
+    background-size: cover;
+    z-index: 1;
+}
+
+.header__wrapper {
+    background: rgba($color: #06b5a9, $alpha: 0.36);
+    position: absolute;
+        top: 0;
+        bottom: 0;
+        left: 0;
+        right: 0;
+    z-index: -2;
+}
+
+
+
+// Header top
+
+.header__top {
     background: rgba($color: #fff, $alpha: 0.94);
     height: remd(85px);
     color: $grey;
     width: 100%;
+    z-index: 3;
+    box-shadow: 3px 3px 3px rgba($color: #000, $alpha: 0.31);
 }
 
 .header__container {
@@ -100,34 +124,31 @@
 
 
 
-
-
-
-
-
-
-
-
-.glavniy-block {
-    background: red;
-}
-
-.main-block {
-    width: 80%;
-    margin: 0 auto;
-    background: red;
+// Header__caption
+.header__caption {
     display: flex;
-    justify-content: space-between;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: 0 auto;
+    height: 566px;
+
+
 }
 
-.block1 {
-    flex-grow: 1;
+
+.header__caption-intro {
+    font-size: remd(22px);
+    text-transform: uppercase;
+    color: #fff;
+    letter-spacing: remd(30px);
+    text-align: center;
 }
 
-.block2 {
-    flex-grow: 1;
-}
-
-.block3 {
-    flex-grow: 1;
+.header__caption-name {
+    font-family: 'Impact';
+    font-size: remd(116px);
+    text-transform: uppercase;
+    color: #fff;
+    text-align: center;
 }

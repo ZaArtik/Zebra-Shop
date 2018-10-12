@@ -553,10 +553,31 @@ h6 {
 }
 
 .header {
+  position: relative;
+  height: 650px;
+  background: url("../images/background/Layer 3.png") 0 0 no-repeat;
+  background-size: cover;
+  z-index: 1;
+}
+
+.header__wrapper {
+  background: rgba(6, 181, 169, 0.36);
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  z-index: -2;
+}
+
+.header__top {
   background: rgba(255, 255, 255, 0.94);
   height: 5.3125rem;
   color: #626262;
   width: 100%;
+  z-index: 3;
+  -webkit-box-shadow: 3px 3px 3px rgba(0, 0, 0, 0.31);
+  box-shadow: 3px 3px 3px rgba(0, 0, 0, 0.31);
 }
 
 .header__container {
@@ -657,36 +678,36 @@ h6 {
   margin-left: 0.625rem;
 }
 
-.glavniy-block {
-  background: red;
-}
-
-.main-block {
-  width: 80%;
-  margin: 0 auto;
-  background: red;
+.header__caption {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: justify;
-  -ms-flex-pack: justify;
-  justify-content: space-between;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  margin: 0 auto;
+  height: 566px;
 }
 
-.block1 {
-  -webkit-box-flex: 1;
-  -ms-flex-positive: 1;
-  flex-grow: 1;
+.header__caption-intro {
+  font-size: 1.375rem;
+  text-transform: uppercase;
+  color: #fff;
+  letter-spacing: 1.875rem;
+  text-align: center;
 }
 
-.block2 {
-  -webkit-box-flex: 1;
-  -ms-flex-positive: 1;
-  flex-grow: 1;
-}
-
-.block3 {
-  -webkit-box-flex: 1;
-  -ms-flex-positive: 1;
-  flex-grow: 1;
+.header__caption-name {
+  font-family: 'Impact';
+  font-size: 7.25rem;
+  text-transform: uppercase;
+  color: #fff;
+  text-align: center;
 }
