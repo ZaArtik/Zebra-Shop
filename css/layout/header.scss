@@ -1,24 +1,25 @@
 .header {
     position: relative;
-    height: 650px;
+    height: remd(650px);
     background: url('../images/background/Layer 3.png') 0 0 no-repeat;
     background-size: cover;
     z-index: 1;
+    margin-bottom: remd(40px);
 }
 
 .header__wrapper {
     background: rgba($color: #06b5a9, $alpha: 0.36);
     position: absolute;
-        top: 0;
-        bottom: 0;
-        left: 0;
-        right: 0;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
     z-index: -2;
 }
 
 
 
-// Header top
+/* ============== Header top ==============*/
 
 .header__top {
     background: rgba($color: #fff, $alpha: 0.94);
@@ -38,10 +39,7 @@
 }
 
 
-// Header logo
-.logo {
-    
-}
+/* ============== Header logo ==============*/
 
 .logo-caption {
     font-size: remd(38px);
@@ -56,7 +54,8 @@
 
 
 
-// Header menu
+/* ============== Header menu ==============*/
+
 .header__menu {
     display: flex;
     align-items: center;
@@ -65,11 +64,29 @@
 }
 
 .header__item {
+    position: relative;
     height: 100%;
     margin-left: remd(10px);
 
     &:first-child {
         margin-left: 0;
+    }
+
+    &:hover {
+        background: $red;
+
+        .header__link {
+            color: #fff;
+            border-bottom: 1px solid #d94855;
+        }
+    }
+}
+
+.header__item_products {
+    &:hover {
+        .submenu {
+            left: 0px;
+        }
     }
 }
 
@@ -81,16 +98,13 @@
     font-size: remd(18px);
     color: $grey;
 
-    &:hover {
-        color: #fff;
-        background: $red;
-    }
+
 }
 
 
 
+/* ============== header__basket ==============*/
 
-// basket 
 .header__basket {
     display: flex;
     position: relative;
@@ -105,8 +119,8 @@
     &::after {
         content: "";
         position: absolute;
-            left: 100%;
-            top: 50%;
+        left: 100%;
+        top: 50%;
         transform: translateY(-6px);
         margin-left: remd(15px);
         border-top: remd(12px) solid #9d9d9d;
@@ -124,7 +138,8 @@
 
 
 
-// Header__caption
+/* ============== Header__caption ==============*/
+
 .header__caption {
     display: flex;
     flex-direction: column;
@@ -135,7 +150,6 @@
 
 
 }
-
 
 .header__caption-intro {
     font-size: remd(22px);
@@ -151,4 +165,67 @@
     text-transform: uppercase;
     color: #fff;
     text-align: center;
+}
+
+
+
+/* ============== Header submenu ==============*/
+
+.submenu {
+    display: flex;
+    width: remd(605px);
+    position: absolute;
+        left: -9999999px;
+    background: $red;
+    z-index: 1000;
+}
+
+.submenu__title {
+    border-right: 1px solid #d94855;
+}
+
+.submenu__caption {
+    padding: remd(10px) remd(35px) remd(5px);
+    border-bottom: 1px solid #d94855;
+}
+
+.logo-caption_submenu {
+    color: #fff;
+}
+
+.logo-caption_pink {
+    color: #fec8cd;
+}
+
+.submenu__logo {
+    text-align: center;
+    padding: remd(55px) remd(70px);
+}
+
+.submenu__list {
+    padding: remd(15px) remd(35px);
+    border-right: 1px solid #d94855;
+
+    &:last-child {
+        border-right: 0;
+    }
+}
+
+.submenu__item {
+    margin-bottom: remd(15px);
+
+    &:last-child {
+        margin-bottom: 0;
+    }
+}
+
+.submenu__link {
+    display: inline-block;
+    color: #fff;
+    opacity: 0.72;
+    transition: 300ms;
+
+    &:hover {
+        opacity: 1;
+    }
 }

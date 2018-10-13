@@ -554,10 +554,11 @@ h6 {
 
 .header {
   position: relative;
-  height: 650px;
+  height: 40.625rem;
   background: url("../images/background/Layer 3.png") 0 0 no-repeat;
   background-size: cover;
   z-index: 1;
+  margin-bottom: 2.5rem;
 }
 
 .header__wrapper {
@@ -570,6 +571,7 @@ h6 {
   z-index: -2;
 }
 
+/* ============== Header top ==============*/
 .header__top {
   background: rgba(255, 255, 255, 0.94);
   height: 5.3125rem;
@@ -594,6 +596,7 @@ h6 {
   align-items: center;
 }
 
+/* ============== Header logo ==============*/
 .logo-caption {
   font-size: 2.375rem;
   font-weight: bold;
@@ -605,6 +608,7 @@ h6 {
   color: #06b5a9;
 }
 
+/* ============== Header menu ==============*/
 .header__menu {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -617,12 +621,26 @@ h6 {
 }
 
 .header__item {
+  position: relative;
   height: 100%;
   margin-left: 0.625rem;
 }
 
 .header__item:first-child {
   margin-left: 0;
+}
+
+.header__item:hover {
+  background: #cf1a2b;
+}
+
+.header__item:hover .header__link {
+  color: #fff;
+  border-bottom: 1px solid #d94855;
+}
+
+.header__item_products:hover .submenu {
+  left: 0px;
 }
 
 .header__link {
@@ -638,11 +656,7 @@ h6 {
   color: #626262;
 }
 
-.header__link:hover {
-  color: #fff;
-  background: #cf1a2b;
-}
-
+/* ============== header__basket ==============*/
 .header__basket {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -678,6 +692,7 @@ h6 {
   margin-left: 0.625rem;
 }
 
+/* ============== Header__caption ==============*/
 .header__caption {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -710,4 +725,158 @@ h6 {
   text-transform: uppercase;
   color: #fff;
   text-align: center;
+}
+
+/* ============== Header submenu ==============*/
+.submenu {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  width: 37.8125rem;
+  position: absolute;
+  left: -9999999px;
+  background: #cf1a2b;
+  z-index: 1000;
+}
+
+.submenu__title {
+  border-right: 1px solid #d94855;
+}
+
+.submenu__caption {
+  padding: 0.625rem 2.1875rem 0.3125rem;
+  border-bottom: 1px solid #d94855;
+}
+
+.logo-caption_submenu {
+  color: #fff;
+}
+
+.logo-caption_pink {
+  color: #fec8cd;
+}
+
+.submenu__logo {
+  text-align: center;
+  padding: 3.4375rem 4.375rem;
+}
+
+.submenu__list {
+  padding: 0.9375rem 2.1875rem;
+  border-right: 1px solid #d94855;
+}
+
+.submenu__list:last-child {
+  border-right: 0;
+}
+
+.submenu__item {
+  margin-bottom: 0.9375rem;
+}
+
+.submenu__item:last-child {
+  margin-bottom: 0;
+}
+
+.submenu__link {
+  display: inline-block;
+  color: #fff;
+  opacity: 0.72;
+  -webkit-transition: 300ms;
+  -o-transition: 300ms;
+  transition: 300ms;
+}
+
+.submenu__link:hover {
+  opacity: 1;
+}
+
+.sales {
+  margin-bottom: 2.5rem;
+}
+
+.sales__list {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.sales__item {
+  width: 25%;
+  margin-left: 15px;
+}
+
+.sales__item:first-child {
+  margin-left: 0;
+}
+
+.sales__item_activitee {
+  background: #58dbd3;
+}
+
+.sales__item_ampersan {
+  background: #e4ce9a;
+}
+
+.sales__item_bally {
+  background: #ffa7ce;
+}
+
+.sales__item_off {
+  background: #f2ca66;
+}
+
+.sales__link {
+  height: 100%;
+  position: relative;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  padding: 25px 20px;
+  color: #fff;
+  line-height: 1.2;
+}
+
+.sales__link_off {
+  padding: 15px 15px;
+}
+
+.sales__desc {
+  -webkit-box-flex: 2;
+  -ms-flex-positive: 2;
+  flex-grow: 2;
+  width: 80%;
+  word-wrap: normal;
+}
+
+.sales__caption {
+  font-weight: bold;
+  font-size: 1.875rem;
+  text-transform: uppercase;
+}
+
+.sales__caption_bally {
+  font-family: 'MyriadPro-Regular';
+  font-weight: normal;
+}
+
+.sales__firm {
+  width: 60%;
+  font-size: 1.1875rem;
+  font-weight: bold;
+  text-transform: uppercase;
+}
+
+.sales__price {
+  -webkit-box-flex: 1;
+  -ms-flex-positive: 1;
+  flex-grow: 1;
+  color: #5e4c38;
+  font-size: 3.0625rem;
+  font-weight: bold;
+  margin-top: 10px;
 }
