@@ -491,7 +491,6 @@ body {
   min-height: 100%;
   overflow: hidden;
   position: relative;
-  min-width: 590px;
 }
 
 .wrapper:after {
@@ -804,10 +803,19 @@ h6 {
 .sales__item {
   width: 25%;
   margin-left: 15px;
+  -webkit-transition: 300ms;
+  -o-transition: 300ms;
+  transition: 300ms;
 }
 
 .sales__item:first-child {
   margin-left: 0;
+}
+
+.sales__item:hover {
+  -webkit-transform: scale(1.05);
+  -ms-transform: scale(1.05);
+  transform: scale(1.05);
 }
 
 .sales__item_activitee {
@@ -836,19 +844,17 @@ h6 {
   -webkit-box-direction: normal;
   -ms-flex-direction: column;
   flex-direction: column;
-  padding: 25px 20px;
+  padding: 1.5625rem 1.25rem;
   color: #fff;
   line-height: 1.2;
+  overflow: hidden;
 }
 
 .sales__link_off {
-  padding: 15px 15px;
+  padding: 0.3125rem 0.9375rem;
 }
 
 .sales__desc {
-  -webkit-box-flex: 2;
-  -ms-flex-positive: 2;
-  flex-grow: 2;
   width: 80%;
   word-wrap: normal;
 }
@@ -857,11 +863,7 @@ h6 {
   font-weight: bold;
   font-size: 1.875rem;
   text-transform: uppercase;
-}
-
-.sales__caption_bally {
-  font-family: 'MyriadPro-Regular';
-  font-weight: normal;
+  margin-bottom: 0.9375rem;
 }
 
 .sales__firm {
@@ -872,11 +874,50 @@ h6 {
 }
 
 .sales__price {
-  -webkit-box-flex: 1;
-  -ms-flex-positive: 1;
-  flex-grow: 1;
   color: #5e4c38;
   font-size: 3.0625rem;
   font-weight: bold;
-  margin-top: 10px;
+  margin-top: auto;
+  padding-top: 0.625rem;
+}
+
+.sales__caption_bally {
+  margin-bottom: 0.3125rem;
+}
+
+.sales__image {
+  position: absolute;
+  left: 100%;
+  top: 100%;
+  -webkit-transform: translate(-100%, -100%);
+  -ms-transform: translate(-100%, -100%);
+  transform: translate(-100%, -100%);
+}
+
+.sales__precent {
+  font-weight: bold;
+  font-size: 6.5625rem;
+  text-align: center;
+  line-height: 0.9;
+  text-transform: uppercase;
+  margin-bottom: 1.875rem;
+}
+
+.sales__off, .sales__go {
+  font-weight: bold;
+  font-size: 4rem;
+  text-align: center;
+  text-transform: uppercase;
+}
+
+.sales__go {
+  display: inline-block;
+  padding: 0.3125rem 0.9375rem;
+  text-align: left;
+  font-size: 1.625rem;
+  background: #fff;
+  color: #f2ca66;
+  margin-left: -1.25rem;
+  margin-bottom: 0.625rem;
+  max-width: 65%;
 }
