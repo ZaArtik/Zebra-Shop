@@ -1,0 +1,157 @@
+.categories {
+    position: relative;
+
+    background: url('../images/background/Layer 6.png') center center no-repeat;
+    background-size: cover;
+    z-index: 1;
+}
+
+.categories__wrapper {
+    position: absolute;
+        left: 0;
+        right: 0;
+        top: 0;
+        bottom: 0;
+    background: rgba($color: #4006b5, $alpha: 0.36);
+    z-index: -2;
+}
+
+.categories__container {
+    margin-bottom: remd(25px);
+}
+
+.categories__caption {
+    font-family: 'Josefin Slab', serif;
+    text-transform: uppercase;
+    font-size: remd(116px);
+    text-align: center;
+    color: #fff;
+    padding-top: remd(35px);
+}
+
+.categories__list {
+    height: remd(350px);
+    position: relative;
+    overflow: hidden;
+}
+
+.categories__icons-item {
+    position: absolute;
+    left: 100%;
+    width: remd(200px);
+    height: remd(200px);
+    background: rgba($color: #58dbd3, $alpha: 1.0);
+    border-radius: 50%;
+}
+
+.categories__icons-item--low-opacity {
+    background: rgba($color: #58dbd3, $alpha: 0.5);
+}
+
+.categories__icons-item--high-opacity {
+    background: rgba($color: #58dbd3, $alpha: 0.8);
+}
+
+.categories__icons-item--1 {
+    top: remd(30px);
+    left: remd(-100px);
+    background-image: url('../images/decor/categories/Shape 11.png');
+    background-repeat:  no-repeat;
+    background-position: center center;
+}
+
+.categories__icons-item--2 {
+    top: 0;
+    left: remd(70px);
+    background-image: url('../images/decor/categories/Shape 10.png');
+    background-repeat:  no-repeat;
+    background-position: center center;
+}
+
+.categories__icons-item--3 {
+    top: remd(85px);
+    left: remd(220px);
+    background-image: url('../images/decor/categories/Shape 4.png');
+    background-repeat:  no-repeat;
+    background-position: center center;
+}
+
+.categories__icons-item--4 {
+    top: 0;
+    left: remd(380px);
+    background-image: url('../images/decor/categories/Shape 6.png');
+    background-repeat:  no-repeat;
+    background-position: center center;
+}
+
+.categories__icons-item--5 {
+    top: remd(30px);
+    left: remd(550px);
+    background-image: url('../images/decor/categories/Shape 8.png');
+    background-repeat:  no-repeat;
+    background-position: center center;
+}
+
+.categories__icons-item--6 {
+    top: remd(85px);
+    left:remd(720px);
+    background-image: url('../images/decor/categories/Shape 10.png');
+    background-repeat:  no-repeat;
+    background-position: center center;
+}
+
+.categories__icons-item--7 {
+    top: 0;
+    left: remd(860px);
+    background-image: url('../images/decor/categories/Shape 4.png');
+    background-repeat:  no-repeat;
+    background-position: center center;
+}
+
+.categories__icons-item--8 {
+    top: remd(121px);
+    left: remd(990px);
+    background-image: url('../images/decor/categories/Shape 11.png');
+    background-repeat:  no-repeat;
+    background-position: center center;
+}
+
+.categories__icons-item--9 {
+    top: 0;
+    left: remd(1110px);
+    background-image: url('../images/decor/categories/Shape 6.png');
+    background-repeat:  no-repeat;
+    background-position: center center;
+}
+
+.categories__icons-item--10 {
+    top: remd(85px);
+    left: remd(1270px);
+    background-image: url('../images/decor/categories/Shape 10.png');
+    background-repeat:  no-repeat;
+    background-position: center center;
+}
+
+.categories__icons-item--11 {
+    top: remd(30px);
+    left: remd(1430px);
+    background-image: url('../images/decor/categories/Shape 8.png');
+    background-repeat:  no-repeat;
+    background-position: center center;
+}
+
+.categories__icons-item--12 {
+    top: remd(85px);
+    left: remd(1590px);
+    background-image: url('../images/decor/categories/Shape 4.png');
+    background-repeat:  no-repeat;
+    background-position: center center;
+}
+
+.categories__icons-item--13 {
+    top: 0;
+    left: remd(1750px);
+    background-image: url('../images/decor/categories/Shape 11.png');
+    background-repeat:  no-repeat;
+    background-position: center center;
+}

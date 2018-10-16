@@ -922,3 +922,160 @@ h6 {
   margin-bottom: 0.625rem;
   max-width: 65%;
 }
+
+.categories {
+  position: relative;
+  background: url("../images/background/Layer 6.png") center center no-repeat;
+  background-size: cover;
+  z-index: 1;
+}
+
+.categories__wrapper {
+  position: absolute;
+  left: 0;
+  right: 0;
+  top: 0;
+  bottom: 0;
+  background: rgba(64, 6, 181, 0.36);
+  z-index: -2;
+}
+
+.categories__container {
+  margin-bottom: 1.5625rem;
+}
+
+.categories__caption {
+  font-family: 'Josefin Slab', serif;
+  text-transform: uppercase;
+  font-size: 7.25rem;
+  text-align: center;
+  color: #fff;
+  padding-top: 2.1875rem;
+}
+
+.categories__list {
+  height: 21.875rem;
+  position: relative;
+  overflow: hidden;
+}
+
+.categories__icons-item {
+  position: absolute;
+  left: 100%;
+  width: 12.5rem;
+  height: 12.5rem;
+  background: #58dbd3;
+  border-radius: 50%;
+}
+
+.categories__icons-item--low-opacity {
+  background: rgba(88, 219, 211, 0.5);
+}
+
+.categories__icons-item--high-opacity {
+  background: rgba(88, 219, 211, 0.8);
+}
+
+.categories__icons-item--1 {
+  top: 1.875rem;
+  left: -6.25rem;
+  background-image: url("../images/decor/categories/Shape 11.png");
+  background-repeat: no-repeat;
+  background-position: center center;
+}
+
+.categories__icons-item--2 {
+  top: 0;
+  left: 4.375rem;
+  background-image: url("../images/decor/categories/Shape 10.png");
+  background-repeat: no-repeat;
+  background-position: center center;
+}
+
+.categories__icons-item--3 {
+  top: 5.3125rem;
+  left: 13.75rem;
+  background-image: url("../images/decor/categories/Shape 4.png");
+  background-repeat: no-repeat;
+  background-position: center center;
+}
+
+.categories__icons-item--4 {
+  top: 0;
+  left: 23.75rem;
+  background-image: url("../images/decor/categories/Shape 6.png");
+  background-repeat: no-repeat;
+  background-position: center center;
+}
+
+.categories__icons-item--5 {
+  top: 1.875rem;
+  left: 34.375rem;
+  background-image: url("../images/decor/categories/Shape 8.png");
+  background-repeat: no-repeat;
+  background-position: center center;
+}
+
+.categories__icons-item--6 {
+  top: 5.3125rem;
+  left: 45rem;
+  background-image: url("../images/decor/categories/Shape 10.png");
+  background-repeat: no-repeat;
+  background-position: center center;
+}
+
+.categories__icons-item--7 {
+  top: 0;
+  left: 53.75rem;
+  background-image: url("../images/decor/categories/Shape 4.png");
+  background-repeat: no-repeat;
+  background-position: center center;
+}
+
+.categories__icons-item--8 {
+  top: 7.5625rem;
+  left: 61.875rem;
+  background-image: url("../images/decor/categories/Shape 11.png");
+  background-repeat: no-repeat;
+  background-position: center center;
+}
+
+.categories__icons-item--9 {
+  top: 0;
+  left: 69.375rem;
+  background-image: url("../images/decor/categories/Shape 6.png");
+  background-repeat: no-repeat;
+  background-position: center center;
+}
+
+.categories__icons-item--10 {
+  top: 5.3125rem;
+  left: 79.375rem;
+  background-image: url("../images/decor/categories/Shape 10.png");
+  background-repeat: no-repeat;
+  background-position: center center;
+}
+
+.categories__icons-item--11 {
+  top: 1.875rem;
+  left: 89.375rem;
+  background-image: url("../images/decor/categories/Shape 8.png");
+  background-repeat: no-repeat;
+  background-position: center center;
+}
+
+.categories__icons-item--12 {
+  top: 5.3125rem;
+  left: 99.375rem;
+  background-image: url("../images/decor/categories/Shape 4.png");
+  background-repeat: no-repeat;
+  background-position: center center;
+}
+
+.categories__icons-item--13 {
+  top: 0;
+  left: 109.375rem;
+  background-image: url("../images/decor/categories/Shape 11.png");
+  background-repeat: no-repeat;
+  background-position: center center;
+}
