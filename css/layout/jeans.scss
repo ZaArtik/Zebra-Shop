@@ -1,0 +1,100 @@
+.jeans__container {
+    display: flex;
+    position: relative;
+}
+
+.jeans__logo {
+    position: absolute;
+        top: -56px;
+        left: 0;
+    width: 350px;
+    height: 171px;
+    z-index: 1;
+    background: url('../images/decor/jeans/levis.png') center center no-repeat;
+
+    &::before {
+        content: url('../images/decor/triangle_1.png');
+        background: center center no-repeat;
+        position: absolute;
+            left: -14px;
+            top: -1px;
+    }
+
+    &::after {
+        content: url('../images/decor/triangle_2.png');
+        background: center center no-repeat;
+        position: absolute;
+            right: -14px;
+            top: -1px;
+    }
+}
+
+.jeans__desc {
+    margin-top: remd(170px);
+    margin-left: remd(50px);
+}
+
+.jeans__caption {
+    font-size: remd(50px);
+    font-weight: bold;
+    margin-bottom: remd(20px);
+}
+
+.jeans__text {
+    font-size: remd(14px);
+    margin-bottom: remd(30px);
+}
+
+.jeans__purchase {
+    display: flex;
+    align-items: center;
+}
+
+.jeans__price {
+    font-size: remd(36px);
+
+    &--bold {
+        font-weight: bold;
+    }
+}
+
+.jeans__add {
+    width: remd(225px);
+    margin-left: auto;
+    margin-right: remd(15px);
+    padding: remd(7px) remd(12px);
+    border: 1px solid $red;
+    color: #fff;
+    background: $red;
+    transition: 300ms;
+    outline: 0;
+
+    &:hover {
+        background: #fff;
+        color: $red;
+
+        .jeans__add-image {
+            background: url('../images/decor/Shape_2_red.png') center center no-repeat;
+        }
+    }
+}
+
+.jeans__add-image {
+    display: inline-block;
+    width: 29px;
+    height: 26px;
+    background: url('../images/decor/Shape_2.png') center center no-repeat;
+    vertical-align: middle;
+    margin-top: remd(5px);
+}
+
+.jeans__add-text {
+    display: inline-block;
+    margin-left: remd(10px);
+    vertical-align: top;
+    font-size: remd(28px);
+}
+
+.jeans__image {
+    margin-left: remd(20px);
+}

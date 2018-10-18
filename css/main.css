@@ -665,7 +665,7 @@ h6 {
 }
 
 .header__basket-iamge {
-  background: url("../images/decor/Shape 1.png") 0 0 no-repeat;
+  background: url("../images/decor/Shape_1.png") 0 0 no-repeat;
   width: 30px;
   height: 30px;
 }
@@ -925,6 +925,7 @@ h6 {
 
 .categories {
   position: relative;
+  margin-bottom: 2.5rem;
   background: url("../images/background/Layer 6.png") center center no-repeat;
   background-size: cover;
   z-index: 1;
@@ -1078,4 +1079,113 @@ h6 {
   background-image: url("../images/decor/categories/Shape 11.png");
   background-repeat: no-repeat;
   background-position: center center;
+}
+
+.jeans__container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  position: relative;
+}
+
+.jeans__logo {
+  position: absolute;
+  top: -56px;
+  left: 0;
+  width: 350px;
+  height: 171px;
+  z-index: 1;
+  background: url("../images/decor/jeans/levis.png") center center no-repeat;
+}
+
+.jeans__logo::before {
+  content: url("../images/decor/triangle_1.png");
+  background: center center no-repeat;
+  position: absolute;
+  left: -14px;
+  top: -1px;
+}
+
+.jeans__logo::after {
+  content: url("../images/decor/triangle_2.png");
+  background: center center no-repeat;
+  position: absolute;
+  right: -14px;
+  top: -1px;
+}
+
+.jeans__desc {
+  margin-top: 10.625rem;
+  margin-left: 3.125rem;
+}
+
+.jeans__caption {
+  font-size: 3.125rem;
+  font-weight: bold;
+  margin-bottom: 1.25rem;
+}
+
+.jeans__text {
+  font-size: 0.875rem;
+  margin-bottom: 1.875rem;
+}
+
+.jeans__purchase {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+}
+
+.jeans__price {
+  font-size: 2.25rem;
+}
+
+.jeans__price--bold {
+  font-weight: bold;
+}
+
+.jeans__add {
+  width: 14.0625rem;
+  margin-left: auto;
+  margin-right: 0.9375rem;
+  padding: 0.4375rem 0.75rem;
+  border: 1px solid #cf1a2b;
+  color: #fff;
+  background: #cf1a2b;
+  -webkit-transition: 300ms;
+  -o-transition: 300ms;
+  transition: 300ms;
+  outline: 0;
+}
+
+.jeans__add:hover {
+  background: #fff;
+  color: #cf1a2b;
+}
+
+.jeans__add:hover .jeans__add-image {
+  background: url("../images/decor/Shape_2_red.png") center center no-repeat;
+}
+
+.jeans__add-image {
+  display: inline-block;
+  width: 29px;
+  height: 26px;
+  background: url("../images/decor/Shape_2.png") center center no-repeat;
+  vertical-align: middle;
+  margin-top: 0.3125rem;
+}
+
+.jeans__add-text {
+  display: inline-block;
+  margin-left: 0.625rem;
+  vertical-align: top;
+  font-size: 1.75rem;
+}
+
+.jeans__image {
+  margin-left: 1.25rem;
 }
