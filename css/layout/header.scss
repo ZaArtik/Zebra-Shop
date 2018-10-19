@@ -1,10 +1,8 @@
 .header {
     position: relative;
     height: remd(650px);
-    background: url('../images/background/Layer 3.png') 0 0 no-repeat;
-    background-size: cover;
-    z-index: 1;
     margin-bottom: remd(40px);
+    overflow: hidden;
 }
 
 .header__wrapper {
@@ -15,6 +13,26 @@
     left: 0;
     right: 0;
     z-index: -2;
+}
+
+.fotorama__wrapper {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    z-index: -3;
+}
+
+.header__background {
+    background: url('../images/background/Layer 3.png') 0 0 no-repeat;
+    background-size: cover;
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    z-index: -3;
 }
 
 
