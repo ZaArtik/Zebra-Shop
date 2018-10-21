@@ -105,6 +105,10 @@
     margin-left: remd(20px);
     width: 60%;
     height: 100%;
+
+    @include laptop {
+        margin-top: 33%;
+    }
 }
 
 .jeans__image-item {

@@ -249,6 +249,22 @@
     <!-- Jquery -->
     <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
         crossorigin="anonymous"></script>
+        <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.7.2/jquery.min.js" type="text/jаvascript"></script>
+        <script>
+            $(document).ready(function(){
+                var HeaderTop = $('.header__top').offset().top;
+                
+                $(window).scroll(function(){
+                        if( $(window).scrollTop() > HeaderTop ) {
+                                $('.header__top').css({position: 'fixed', top: '0px', background: 'rgba(255, 255, 255, 1)'});
+                                $('.header__caption').css({marginTop: '87px'});
+                        } else {
+                                $('.header__top').css({position: 'static', background: 'rgba(255, 255, 255, 0.94)'});
+                                $('.header__caption').css({marginTop: '0'});
+                        }
+                });
+            });
+        </script>
     <!-- Scripts -->
     <script src="js/bootstrap.min.js"></script>
 </body>

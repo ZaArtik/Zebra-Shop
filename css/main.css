@@ -597,6 +597,9 @@ h6 {
   z-index: 3;
   -webkit-box-shadow: 3px 3px 3px rgba(0, 0, 0, 0.31);
   box-shadow: 3px 3px 3px rgba(0, 0, 0, 0.31);
+  -webkit-transition: 300ms;
+  -o-transition: 300ms;
+  transition: 300ms;
 }
 
 .header__container {
@@ -1216,6 +1219,12 @@ h6 {
   margin-left: 1.25rem;
   width: 60%;
   height: 100%;
+}
+
+@media screen and (max-width: 992px) {
+  .jeans__image {
+    margin-top: 33%;
+  }
 }
 
 .jeans__image-item {
