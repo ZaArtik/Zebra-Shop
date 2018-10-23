@@ -104,7 +104,15 @@
 .header__item_products {
     &:hover {
         .submenu {
-            left: 0px;
+            left: 0;
+        }
+    }
+
+    @include laptop {
+        &:hover {
+            .submenu {
+                left: -280px;
+            }
         }
     }
 }

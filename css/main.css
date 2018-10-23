@@ -660,7 +660,13 @@ h6 {
 }
 
 .header__item_products:hover .submenu {
-  left: 0px;
+  left: 0;
+}
+
+@media screen and (max-width: 992px) {
+  .header__item_products:hover .submenu {
+    left: -280px;
+  }
 }
 
 .header__link {
@@ -819,11 +825,13 @@ h6 {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  -ms-flex-wrap: wrap;
+  flex-wrap: wrap;
 }
 
 .sales__item {
-  width: 25%;
-  margin-left: 15px;
+  width: 23%;
+  margin-left: 0.9375rem;
   -webkit-transition: 300ms;
   -o-transition: 300ms;
   transition: 300ms;
@@ -837,6 +845,16 @@ h6 {
   -webkit-transform: scale(1.05);
   -ms-transform: scale(1.05);
   transform: scale(1.05);
+}
+
+@media screen and (max-width: 992px) {
+  .sales__item {
+    width: 48%;
+    margin-bottom: 0.9375rem;
+  }
+  .sales__item:nth-child(2n+1) {
+    margin-left: 0;
+  }
 }
 
 .sales__item_activitee {
@@ -1168,12 +1186,28 @@ h6 {
   align-items: center;
 }
 
+@media screen and (max-width: 992px) {
+  .jeans__purchase {
+    -ms-flex-wrap: wrap;
+    flex-wrap: wrap;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+  }
+}
+
 .jeans__price {
   font-size: 2.25rem;
 }
 
 .jeans__price--bold {
   font-weight: bold;
+}
+
+@media screen and (max-width: 992px) {
+  .jeans__price {
+    margin-bottom: 0.9375rem;
+  }
 }
 
 .jeans__add {
@@ -1197,6 +1231,12 @@ h6 {
 
 .jeans__add:hover .jeans__add-image {
   background: url("../images/decor/Shape_2_red.png") center center no-repeat;
+}
+
+@media screen and (max-width: 992px) {
+  .jeans__add {
+    margin: 0;
+  }
 }
 
 .jeans__add-image {

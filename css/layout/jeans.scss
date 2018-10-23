@@ -54,6 +54,11 @@
 .jeans__purchase {
     display: flex;
     align-items: center;
+
+    @include laptop {
+        flex-wrap: wrap;
+        justify-content: center;
+    }
 }
 
 .jeans__price {
@@ -61,6 +66,10 @@
 
     &--bold {
         font-weight: bold;
+    }
+
+    @include laptop {
+        margin-bottom: remd(15px);
     }
 }
 
@@ -82,6 +91,10 @@
         .jeans__add-image {
             background: url('../images/decor/Shape_2_red.png') center center no-repeat;
         }
+    }
+
+    @include laptop {
+        margin: 0;
     }
 }
 

@@ -4,11 +4,12 @@
 
 .sales__list {
     display: flex;
+    flex-wrap: wrap;
 }
 
 .sales__item {
-    width: 25%;
-    margin-left: 15px;
+    width: 23%;
+    margin-left: remd(15px);
     transition: 300ms;
 
     &:first-child {
@@ -17,6 +18,15 @@
 
     &:hover {
         transform: scale(1.05);
+    }
+
+    @include laptop {
+        width: 48%;
+        margin-bottom: remd(15px);
+
+        &:nth-child(2n+1) {
+            margin-left: 0;
+        }
     }
 }
 
