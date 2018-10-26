@@ -38,6 +38,10 @@
     width: 75%;
     margin-top: remd(170px);
     margin-left: remd(50px);
+
+    @include tablet {
+        margin-left: remd(20px);
+    }
 }
 
 .jeans__caption {

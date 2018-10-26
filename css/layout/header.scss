@@ -50,11 +50,15 @@
 }
 
 .header__container {
-    padding: 0px remd(20px);
+    padding: 0 remd(20px);
     height: remd(85px);
     display: flex;
     justify-content: space-between;
     align-items: center;
+
+    @include tablet {
+        padding: 0 remd(5px);
+    }
 }
 
 
@@ -80,6 +84,11 @@
     align-items: center;
     height: 100%;
     margin-left: remd(50px);
+
+    @include tablet {
+        margin-left: remd(20px);
+        margin-right: remd(10px);
+    }
 }
 
 .header__item {
@@ -132,10 +141,75 @@
 
 /* ============== header__basket ==============*/
 
+@include tablet {
+    .header__tablet-basket {
+        position: fixed;
+        top: 50%;
+        left: 0;
+        margin-bottom: 15px;
+        border-top-right-radius: 20px;
+        border-bottom-right-radius: 20px;
+        width: 50px;
+        height: 90px;
+        background: rgba($color: #fff, $alpha: 0.5);
+        display: flex;
+        justify-content: flex-start;
+        align-items: center;
+        z-index: 999;
+        transition: 300ms;
+
+        &:hover {
+            background: rgba($color: #fff, $alpha: 1);
+            cursor: pointer;
+            justify-content: flex-start;
+            height: 100%;
+            width: 80%;
+            top: 0;
+            border-top-right-radius: 0;
+            border-bottom-right-radius: 0;
+
+            .header__tablet-basket-image {
+                margin-left: remd(10px);
+
+                &::before {
+                    opacity: 0;
+                }
+            }
+        }
+    }
+
+    .header__tablet-basket-image {
+        position: fixed;
+        z-index: 1000;
+        background: url('../images/decor/Shape_1.png') 0 0 no-repeat;
+        width: 30px;
+        height: 30px;
+
+        &::before {
+            content: "";
+            position: absolute;
+            top: 42%;
+            left: 83%;
+            transform: translateY(-6px);
+            margin-left: remd(15px);
+            border-top: remd(12px) solid transparent;
+            border-bottom: 10px solid transparent;
+            border-left: 10px solid #9d9d9d;
+            border-right: 10px solid transparent;
+            transition: 300ms;
+        }
+    }
+}
+
+
 .header__basket {
     display: flex;
     position: relative;
     margin-right: remd(30px);
+
+    @include tablet {
+        display: none;
+    }
 }
 
 .header__basket-iamge {
@@ -154,6 +228,10 @@
         border-bottom: 10px solid transparent;
         border-left: 10px solid transparent;
         border-right: 10px solid transparent;
+
+        @include laptop {
+            margin-left: remd(5px);
+        }
     }
 }
 
@@ -202,7 +280,7 @@
     display: flex;
     width: remd(605px);
     position: absolute;
-        left: -9999999px;
+    left: -9999999px;
     background: $red;
     z-index: 1000;
 }

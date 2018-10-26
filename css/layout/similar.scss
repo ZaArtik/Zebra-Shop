@@ -24,6 +24,15 @@
             border: 1px solid #ff808c;
         }
     }
+
+    @include tablet {
+        width: 32%;
+        margin-bottom: remd(20px);
+
+        &:nth-child(3n+1) {
+            margin-left: 0;
+        }
+    }
 }
 
 .similar__link {

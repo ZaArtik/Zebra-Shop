@@ -5,6 +5,10 @@
 .sales__list {
     display: flex;
     flex-wrap: wrap;
+
+    @include tablet {
+        margin-right: remd(-10px);
+    }
 }
 
 .sales__item {

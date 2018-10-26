@@ -1,5 +1,6 @@
 $(document).ready(function () {
     var HeaderTop = $('.header__top').offset().top;
+    var w = screen.width;
 
     $(window).scroll(function () {
         if ($(window).scrollTop() > HeaderTop) {
@@ -11,6 +12,16 @@ $(document).ready(function () {
             $('.header__caption').css({
                 marginTop: '87px'
             });
+            if ($(window).width() <= '768') {
+                $('.header__caption').css({
+                    marginTop: '73px'
+                });
+            }
+            if ($(window).width() <= '480') {
+                $('.header__caption').css({
+                    marginTop: '62px'
+                });
+            }
         } else {
             $('.header__top').css({
                 position: 'static',
@@ -20,5 +31,7 @@ $(document).ready(function () {
                 marginTop: '0'
             });
         }
+
+
     });
 });
