@@ -11,11 +11,19 @@
 .footer__left {
     text-align: left;
     width: 50%;
+
+    @include phones {
+        width: 40%;
+    }
 }
 
 .footer__right {
     text-align: right;
     width: 50%;
+
+    @include phones {
+        width: 60%;
+    }
 }
 
 .copyright {
@@ -23,15 +31,20 @@
 }
 
 .footer__list {
-margin-top: remd(10px);
+    margin-top: remd(10px);
+    height: 100%;
 }
 
 .footer__item {
     display: inline-block;
-    width: remd(44px);
-    height: remd(32px);
+    width: 44px;
+    height: 32px;
     margin-left: remd(35px);
     transition: 300ms;
+
+    &:first-child {
+        margin-left: 0;
+    }
 
     &_fb {
         background: url('../images/content/socials/fb.png') center center no-repeat;

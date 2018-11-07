@@ -89,6 +89,10 @@
         margin-left: remd(20px);
         margin-right: remd(10px);
     }
+
+    @include phones {
+        display: none;
+    }
 }
 
 .header__item {
@@ -120,7 +124,15 @@
     @include laptop {
         &:hover {
             .submenu {
-                left: -280px;
+                left: -230px;
+            }
+        }
+    }
+
+    @include phones {
+        &:hover {
+            .submenu {
+                left: -110px;
             }
         }
     }
@@ -133,8 +145,14 @@
     padding: 0 remd(10px);
     font-size: remd(18px);
     color: $grey;
+}
 
 
+
+/* ============== Header menu ==============*/
+
+.header__menu-phone {
+    display: none;
 }
 
 
@@ -210,9 +228,18 @@
     @include tablet {
         display: none;
     }
+
+    &:hover .header__basket-image::after {
+        left: 90%;
+        top: 40%;
+        border-top: 10px solid transparent;
+        border-bottom: 10px solid transparent;
+        border-left: 10px solid transparent;
+        border-right: remd(12px) solid #9d9d9d;
+    }
 }
 
-.header__basket-iamge {
+.header__basket-image {
     background: url('../images/decor/Shape_1.png') 0 0 no-repeat;
     width: 30px;
     height: 30px;
@@ -228,6 +255,7 @@
         border-bottom: 10px solid transparent;
         border-left: 10px solid transparent;
         border-right: 10px solid transparent;
+        transition: 300ms;
 
         @include laptop {
             margin-left: remd(5px);
@@ -262,6 +290,10 @@
     color: #fff;
     letter-spacing: remd(30px);
     text-align: center;
+
+    @include phones {
+        margin-left: remd(20px);
+    }
 }
 
 .header__caption-name {
@@ -283,10 +315,18 @@
     left: -9999999px;
     background: $red;
     z-index: 1000;
+
+    @include phones {
+        width: remd(390px);
+    }
 }
 
 .submenu__title {
     border-right: 1px solid #d94855;
+
+    @include phones {
+        display: none;
+    }
 }
 
 .submenu__caption {
