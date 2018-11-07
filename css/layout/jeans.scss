@@ -6,6 +6,11 @@
     display: flex;
     align-items: center;
     position: relative;
+    flex-direction: row-reverse;
+
+    @include phones {
+        flex-direction: column;
+    }
 }
 
 .jeans__logo {
@@ -32,6 +37,12 @@
             right: -14px;
             top: -1px;
     }
+
+    @include phones {
+        top: -45px;
+        left: 50%;
+        margin-left: -175px;
+    }
 }
 
 .jeans__desc {
@@ -41,6 +52,11 @@
 
     @include tablet {
         margin-left: remd(20px);
+    }
+
+    @include phones {
+        margin-top: 0;
+        text-align: center;
     }
 }
 
@@ -74,6 +90,10 @@
 
     @include laptop {
         margin-bottom: remd(15px);
+    }
+
+    @include phones {
+        width: 100%;
     }
 }
 
@@ -125,6 +145,10 @@
 
     @include laptop {
         margin-top: 33%;
+    }
+
+    @include phones {
+        margin-top: 45%;
     }
 }
 
